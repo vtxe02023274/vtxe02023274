@@ -12,6 +12,10 @@ I work on the server side of online games: network protocols, game logic, in-gam
 - 營運工具：GM 主控台、機器人、監控與自動更新
 - 資料庫：MySQL／SQL Server 結構設計、備份與效能調整
 
+**專案 / Projects**
+
+- [pktspec](https://github.com/vtxe02023274/pktspec)：用一份 YAML 描述遊戲封包，產生 Java 讀寫程式與文件。Describe game packets once in YAML, generate Java encoders/decoders and docs.
+
 **常用技術 / Stack**
 
 Java · C++ · C# · MySQL · SQL Server · Netty · Windows Server
