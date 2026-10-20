@@ -1,4 +1,4 @@
-<img src="banner.svg" alt="冷牛 / game server developer" width="100%">
+<img src="banner.svg" alt="Leng Niu / game server developer" width="100%">
 
 專注在線上遊戲的伺服器端：封包協定、遊戲邏輯、經濟系統，以及營運用的管理工具。也做 2D 遊戲用的地圖、圖片與字型工具。
 

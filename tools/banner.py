@@ -91,13 +91,13 @@ def main():
 
     # Name, title and a terminal line with a blinking cursor.
     tx = 280
-    name, _, name_h = glyph_rects("冷牛", FONTS / "msjhbd.ttc", 16, 6, tx, 24, CREAM, bold=True)
+    name, _, name_h = glyph_rects("LENG NIU", FONTS / "consolab.ttf", 13, 6, tx, 44, CREAM)
     parts.append(name)
     title, _, title_h = glyph_rects(
-        "GAME SERVER DEVELOPER", FONTS / "consolab.ttf", 13, 3, tx, 34 + name_h, ORANGE
+        "GAME SERVER DEVELOPER", FONTS / "consolab.ttf", 13, 3, tx, 56 + name_h, ORANGE
     )
     parts.append(title)
-    line_y = 48 + name_h + title_h
+    line_y = 72 + name_h + title_h
     line, line_w, _ = glyph_rects(
         "> netcode / protocols / 2d game tools", FONTS / "consola.ttf", 11, 2, tx, line_y, TEAL
     )
