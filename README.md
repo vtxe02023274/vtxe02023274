@@ -15,7 +15,10 @@ I work on the server side of online games: network protocols, game logic, in-gam
 **專案 / Projects**
 
 - [pktspec](https://github.com/vtxe02023274/pktspec)：用一份 YAML 描述遊戲封包，產生 Java 讀寫程式與文件。Describe game packets once in YAML, generate Java encoders/decoders and docs.
+- [sidescroll-net](https://github.com/vtxe02023274/sidescroll-net)：橫向捲軸多人連線的權威伺服器，客戶端預測、內插與延遲補償。Authoritative server for 2D side-scrolling multiplayer, with client prediction, interpolation and lag compensation.
+- [isotiles](https://github.com/vtxe02023274/isotiles)：網頁版等角地圖編輯器，存成 Tiled 地圖。Isometric tile map editor in the browser that saves Tiled maps.
+- [aseview](https://github.com/vtxe02023274/aseview)：網頁版 Aseprite 檢視器，匯出 sprite sheet。View Aseprite files and export sprite sheets.
 
 **常用技術 / Stack**
 
-Java · C++ · C# · MySQL · SQL Server · Netty · Windows Server
+Java · C++ · C# · TypeScript · MySQL · SQL Server · Netty · Windows Server
