@@ -74,6 +74,10 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 </tr>
 </table>
 
+### Open source contributions
+
+- [colyseus/schema#245](https://github.com/colyseus/schema/pull/245) (merged): reject collections of collections with a clear error when the schema is defined
+
 ### Tech stack
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
@@ -107,6 +111,10 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 | [aseview](https://github.com/vtxe02023274/aseview) | Aseprite 檢視與匯出：sprite sheet、逐標籤 GIF、放大、逐圖層，網頁與命令列都能用（[線上試用](https://vtxe02023274.github.io/aseview/)） |
 | [fntview](https://github.com/vtxe02023274/fntview) | BMFont 點陣字型檢查與轉檔，支援 SDF／MSDF，也能從 .ttf 產生字型（[線上試用](https://vtxe02023274.github.io/fntview/)） |
 | [tiledcheck](https://github.com/vtxe02023274/tiledcheck) | Tiled 地圖檢查：缺檔、超出範圍的圖塊、重疊或沒用到的 tileset，可放進 GitHub Actions |
+
+### 開源貢獻
+
+- [colyseus/schema#245](https://github.com/colyseus/schema/pull/245)（已合併）：多人連線狀態同步庫，巢狀集合在定義時就給出清楚的錯誤，不再到執行時才莫名失敗
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
