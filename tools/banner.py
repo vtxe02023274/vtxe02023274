@@ -57,7 +57,7 @@ def glyph_rects(text, font_path, size, cell, x0, y0, color, bold=False):
 
 
 def avatar_png():
-    img = Image.open(ROOT / "avatar" / "vt_avatar_512.png").convert("RGB")
+    img = Image.open(ROOT / "avatar" / "current.png").convert("RGB")
     small = img.resize((64, 64), Image.BOX).quantize(colors=24, dither=Image.Dither.NONE)
     out = io.BytesIO()
     small.convert("RGB").save(out, "PNG", optimize=True)

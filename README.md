@@ -16,16 +16,16 @@ I work on the server side of online games: network protocols, game logic, in-gam
 
 | 專案 | 說明 |
 | --- | --- |
-| [sidescroll-net](https://github.com/vtxe02023274/sidescroll-net) · [試玩](https://vtxe02023274.github.io/sidescroll-net/) | 橫向捲軸多人連線：權威伺服器、客戶端預測（修正量 0）、內插、延遲補償、快照差量與視野裁切。Authoritative server for 2D side-scrolling multiplayer with prediction, interpolation, lag compensation and delta snapshots. |
+| [sidescroll-net](https://github.com/vtxe02023274/sidescroll-net)<br>[試玩](https://vtxe02023274.github.io/sidescroll-net/) | 橫向捲軸多人連線：權威伺服器、客戶端預測（修正量 0）、內插、延遲補償、快照差量與視野裁切。Authoritative server for 2D side-scrolling multiplayer with prediction, interpolation, lag compensation and delta snapshots. |
 | [pktspec](https://github.com/vtxe02023274/pktspec) | 用一份 YAML 描述遊戲封包，產生 Java 讀寫程式與文件。Describe game packets once in YAML, generate Java encoders/decoders and docs. |
 
 ### ▌2D 遊戲工具 / 2D game tools
 
 | 專案 | 說明 |
 | --- | --- |
-| [isotiles](https://github.com/vtxe02023274/isotiles) · [試用](https://vtxe02023274.github.io/isotiles/) | 網頁版等角與交錯式地圖編輯器，讀寫 Tiled 地圖，渲染與 Tiled 逐像素一致。Isometric and staggered map editor in the browser, reads and writes Tiled maps. |
-| [aseview](https://github.com/vtxe02023274/aseview) · [試用](https://vtxe02023274.github.io/aseview/) | Aseprite 檢視與匯出：sprite sheet、逐標籤 GIF、放大、逐圖層，網頁與命令列都能用。View Aseprite files and export sheets, GIFs, scaled and per-layer, in the browser or from the command line. |
-| [fntview](https://github.com/vtxe02023274/fntview) · [試用](https://vtxe02023274.github.io/fntview/) | BMFont 點陣字型檢查、轉檔，支援 SDF／MSDF，也能從 .ttf 產生字型。Check, convert and make BMFont bitmap fonts, including SDF and MSDF. |
+| [isotiles](https://github.com/vtxe02023274/isotiles)<br>[試用](https://vtxe02023274.github.io/isotiles/) | 網頁版等角與交錯式地圖編輯器，讀寫 Tiled 地圖，渲染與 Tiled 逐像素一致。Isometric and staggered map editor in the browser, reads and writes Tiled maps. |
+| [aseview](https://github.com/vtxe02023274/aseview)<br>[試用](https://vtxe02023274.github.io/aseview/) | Aseprite 檢視與匯出：sprite sheet、逐標籤 GIF、放大、逐圖層，網頁與命令列都能用。View Aseprite files and export sheets, GIFs, scaled and per-layer, in the browser or from the command line. |
+| [fntview](https://github.com/vtxe02023274/fntview)<br>[試用](https://vtxe02023274.github.io/fntview/) | BMFont 點陣字型檢查、轉檔，支援 SDF／MSDF，也能從 .ttf 產生字型。Check, convert and make BMFont bitmap fonts, including SDF and MSDF. |
 | [tiledcheck](https://github.com/vtxe02023274/tiledcheck) | Tiled 地圖檢查：缺檔、超出範圍的圖塊、重疊的 tileset、沒用到的 tileset，可放進 GitHub Actions。Lint Tiled maps locally or in CI. |
 
 ### ▌常用技術 / Stack
