@@ -77,6 +77,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 ### Open source contributions
 
 - [colyseus/schema#245](https://github.com/colyseus/schema/pull/245) (merged): reject collections of collections with a clear error when the schema is defined
+- [melonjs/melonJS#1759](https://github.com/melonjs/melonJS/pull/1759) (merged): place tile objects on isometric maps where Tiled draws them
 
 ### Tech stack
 
@@ -115,6 +116,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 ### 開源貢獻
 
 - [colyseus/schema#245](https://github.com/colyseus/schema/pull/245)（已合併）：多人連線狀態同步庫，巢狀集合在定義時就給出清楚的錯誤，不再到執行時才莫名失敗
+- [melonjs/melonJS#1759](https://github.com/melonjs/melonJS/pull/1759)（已合併）：HTML5 遊戲引擎，等角地圖上的圖塊物件改成放在 Tiled 畫的位置，不再偏移
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
