@@ -30,9 +30,9 @@ Authoritative server for 2D side-scrolling multiplayer: client prediction with z
 <td width="50%" valign="top">
 
 #### [pktspec](https://github.com/vtxe02023274/pktspec)
-Describe game packets once in YAML, then generate Java encoders and decoders plus a reference document.
+Describe game packets once in YAML, then generate encoders and decoders for Java, C#, TypeScript and C++, a Wireshark dissector and a reference document. `diff` flags changes that break old clients and `fuzz` writes test corpora.
 
-`TypeScript` `Java` `YAML`
+`TypeScript` `Java` `C#` `C++` `YAML`
 
 </td>
 </tr>
@@ -108,7 +108,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 | 專案 | 說明 |
 |---|---|
 | [sidescroll-net](https://github.com/vtxe02023274/sidescroll-net) | 橫向捲軸多人連線的權威伺服器：客戶端預測（修正量 0）、內插、延遲補償、快照差量與視野裁切（[線上試玩](https://vtxe02023274.github.io/sidescroll-net/)） |
-| [pktspec](https://github.com/vtxe02023274/pktspec) | 用一份 YAML 描述遊戲封包，產生 Java 讀寫程式與文件 |
+| [pktspec](https://github.com/vtxe02023274/pktspec) | 用一份 YAML 描述遊戲封包，產生 Java、C#、TypeScript、C++ 讀寫程式、Wireshark 外掛與文件；`diff` 檢查新舊版相容、`fuzz` 產生測試資料 |
 | [isotiles](https://github.com/vtxe02023274/isotiles) | 網頁版等角與交錯式地圖編輯器，讀寫 Tiled 地圖，渲染與 Tiled 逐像素一致（[線上試用](https://vtxe02023274.github.io/isotiles/)） |
 | [aseview](https://github.com/vtxe02023274/aseview) | Aseprite 檢視與匯出：sprite sheet、逐標籤 GIF、放大、逐圖層，網頁與命令列都能用（[線上試用](https://vtxe02023274.github.io/aseview/)） |
 | [fntview](https://github.com/vtxe02023274/fntview) | BMFont 點陣字型檢查與轉檔，支援 SDF／MSDF，也能從 .ttf 產生字型（[線上試用](https://vtxe02023274.github.io/fntview/)） |
