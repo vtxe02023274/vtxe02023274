@@ -79,6 +79,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [colyseus/schema#245](https://github.com/colyseus/schema/pull/245) (merged): reject collections of collections with a clear error when the schema is defined
 - [melonjs/melonJS#1759](https://github.com/melonjs/melonJS/pull/1759) (merged): place tile objects on isometric maps where Tiled draws them
 - [pixijs/pixijs#12324](https://github.com/pixijs/pixijs/pull/12324) (merged): add a safariFontDelay option so HTMLText can skip the fixed 100ms font wait in Safari
+- [melonjs/melonJS#1766](https://github.com/melonjs/melonJS/pull/1766) (merged): project isometric collision shapes with the map tile ratio instead of a fixed 2:1
 
 ### Tech stack
 
@@ -119,6 +120,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [colyseus/schema#245](https://github.com/colyseus/schema/pull/245)（已合併）：多人連線狀態同步庫，巢狀集合在定義時就給出清楚的錯誤，不再到執行時才莫名失敗
 - [melonjs/melonJS#1759](https://github.com/melonjs/melonJS/pull/1759)（已合併）：HTML5 遊戲引擎，等角地圖上的圖塊物件改成放在 Tiled 畫的位置，不再偏移
 - [pixijs/pixijs#12324](https://github.com/pixijs/pixijs/pull/12324)（已合併）：2D 繪圖引擎，HTMLText 新增 safariFontDelay 選項，字型已載入時 Safari 不必再固定等 100ms
+- [melonjs/melonJS#1766](https://github.com/melonjs/melonJS/pull/1766)（已合併）：HTML5 遊戲引擎，等角地圖的碰撞形狀依圖塊比例投影，非 2:1 圖塊不再左右拉伸
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
