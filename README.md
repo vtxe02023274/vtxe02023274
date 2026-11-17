@@ -80,6 +80,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [melonjs/melonJS#1759](https://github.com/melonjs/melonJS/pull/1759) (merged): place tile objects on isometric maps where Tiled draws them
 - [pixijs/pixijs#12324](https://github.com/pixijs/pixijs/pull/12324) (merged): add a safariFontDelay option so HTMLText can skip the fixed 100ms font wait in Safari
 - [melonjs/melonJS#1766](https://github.com/melonjs/melonJS/pull/1766) (merged): project isometric collision shapes with the map tile ratio instead of a fixed 2:1
+- [diasurgical/DevilutionX#8808](https://github.com/diasurgical/DevilutionX/pull/8808) (merged): fix the build with UNPACKED_MPQS=ON by always including the mod identity header
 
 ### Tech stack
 
@@ -121,6 +122,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [melonjs/melonJS#1759](https://github.com/melonjs/melonJS/pull/1759)（已合併）：HTML5 遊戲引擎，等角地圖上的圖塊物件改成放在 Tiled 畫的位置，不再偏移
 - [pixijs/pixijs#12324](https://github.com/pixijs/pixijs/pull/12324)（已合併）：2D 繪圖引擎，HTMLText 新增 safariFontDelay 選項，字型已載入時 Safari 不必再固定等 100ms
 - [melonjs/melonJS#1766](https://github.com/melonjs/melonJS/pull/1766)（已合併）：HTML5 遊戲引擎，等角地圖的碰撞形狀依圖塊比例投影，非 2:1 圖塊不再左右拉伸
+- [diasurgical/DevilutionX#8808](https://github.com/diasurgical/DevilutionX/pull/8808)（已合併）：經典 ARPG 的開源移植，開啟 UNPACKED_MPQS 時一律引入 mod 標頭檔，修好編譯失敗
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
