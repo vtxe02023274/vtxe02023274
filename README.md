@@ -82,6 +82,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [melonjs/melonJS#1766](https://github.com/melonjs/melonJS/pull/1766) (merged): project isometric collision shapes with the map tile ratio instead of a fixed 2:1
 - [diasurgical/DevilutionX#8808](https://github.com/diasurgical/DevilutionX/pull/8808) (merged): fix the build with UNPACKED_MPQS=ON by always including the mod identity header
 - [adamhathcock/sharpcompress#1497](https://github.com/adamhathcock/sharpcompress/pull/1497) (merged): flush the final block when a DeflateStream is disposed with leaveOpen: true
+- [fallahn/tmxlite#187](https://github.com/fallahn/tmxlite/pull/187) (merged): resolve tileset and template paths relative to their own file so templates in subfolders load
 
 ### Tech stack
 
@@ -125,6 +126,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [melonjs/melonJS#1766](https://github.com/melonjs/melonJS/pull/1766)（已合併）：HTML5 遊戲引擎，等角地圖的碰撞形狀依圖塊比例投影，非 2:1 圖塊不再左右拉伸
 - [diasurgical/DevilutionX#8808](https://github.com/diasurgical/DevilutionX/pull/8808)（已合併）：經典 ARPG 的開源移植，開啟 UNPACKED_MPQS 時一律引入 mod 標頭檔，修好編譯失敗
 - [adamhathcock/sharpcompress#1497](https://github.com/adamhathcock/sharpcompress/pull/1497)（已合併）：.NET 壓縮函式庫，DeflateStream 以 leaveOpen: true 關閉時補寫最後的壓縮區塊，不再輸出空資料
+- [fallahn/tmxlite#187](https://github.com/fallahn/tmxlite/pull/187)（已合併）：C++ Tiled 地圖讀取庫，物件範本與其圖塊集改從各自所在目錄解析路徑，放在子資料夾的範本不再讀不到
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
