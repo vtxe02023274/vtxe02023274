@@ -85,6 +85,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#187](https://github.com/fallahn/tmxlite/pull/187) (merged): resolve tileset and template paths relative to their own file so templates in subfolders load
 - [philterd/phileas-dotnet#200](https://github.com/philterd/phileas-dotnet/pull/200) (merged): stop the ZIP code filter from flagging five digits hyphen-joined to a longer identifier such as `2026-00847`
 - [mini-software/MiniExcel#1052](https://github.com/mini-software/MiniExcel/pull/1052) (merged): honor ReadEmptyFieldsAsDefault for CSV files read with a header row
+- [MapsterMapper/Mapster#1036](https://github.com/MapsterMapper/Mapster/pull/1036) (merged): escape control characters in char and string constants so translated expressions and generated code compile
 
 ### Tech stack
 
@@ -131,6 +132,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#187](https://github.com/fallahn/tmxlite/pull/187)（已合併）：C++ Tiled 地圖讀取庫，物件範本與其圖塊集改從各自所在目錄解析路徑，放在子資料夾的範本不再讀不到
 - [philterd/phileas-dotnet#200](https://github.com/philterd/phileas-dotnet/pull/200)（已合併）：.NET 個資遮蔽函式庫，郵遞區號過濾器不再把 `2026-00847` 這類用連字號接在較長編號後的五位數誤判為郵遞區號
 - [mini-software/MiniExcel#1052](https://github.com/mini-software/MiniExcel/pull/1052)（已合併）：.NET Excel／CSV 讀寫庫，有標題列的 CSV 也套用 ReadEmptyFieldsAsDefault，空欄位改回型別預設值
+- [MapsterMapper/Mapster#1036](https://github.com/MapsterMapper/Mapster/pull/1036)（已合併）：.NET 物件對應庫，運算式轉成 C# 程式碼時跳脫字元與字串常數裡的換行等控制字元，產生的程式碼不再無法編譯
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
