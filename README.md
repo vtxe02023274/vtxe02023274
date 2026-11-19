@@ -84,6 +84,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [adamhathcock/sharpcompress#1497](https://github.com/adamhathcock/sharpcompress/pull/1497) (merged): flush the final block when a DeflateStream is disposed with leaveOpen: true
 - [fallahn/tmxlite#187](https://github.com/fallahn/tmxlite/pull/187) (merged): resolve tileset and template paths relative to their own file so templates in subfolders load
 - [philterd/phileas-dotnet#200](https://github.com/philterd/phileas-dotnet/pull/200) (merged): stop the ZIP code filter from flagging five digits hyphen-joined to a longer identifier such as `2026-00847`
+- [mini-software/MiniExcel#1052](https://github.com/mini-software/MiniExcel/pull/1052) (merged): honor ReadEmptyFieldsAsDefault for CSV files read with a header row
 
 ### Tech stack
 
@@ -129,6 +130,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [adamhathcock/sharpcompress#1497](https://github.com/adamhathcock/sharpcompress/pull/1497)（已合併）：.NET 壓縮函式庫，DeflateStream 以 leaveOpen: true 關閉時補寫最後的壓縮區塊，不再輸出空資料
 - [fallahn/tmxlite#187](https://github.com/fallahn/tmxlite/pull/187)（已合併）：C++ Tiled 地圖讀取庫，物件範本與其圖塊集改從各自所在目錄解析路徑，放在子資料夾的範本不再讀不到
 - [philterd/phileas-dotnet#200](https://github.com/philterd/phileas-dotnet/pull/200)（已合併）：.NET 個資遮蔽函式庫，郵遞區號過濾器不再把 `2026-00847` 這類用連字號接在較長編號後的五位數誤判為郵遞區號
+- [mini-software/MiniExcel#1052](https://github.com/mini-software/MiniExcel/pull/1052)（已合併）：.NET Excel／CSV 讀寫庫，有標題列的 CSV 也套用 ReadEmptyFieldsAsDefault，空欄位改回型別預設值
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
