@@ -88,6 +88,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [MapsterMapper/Mapster#1036](https://github.com/MapsterMapper/Mapster/pull/1036) (merged): escape control characters in char and string constants so translated expressions and generated code compile
 - [RevenantX/LiteNetLib#621](https://github.com/RevenantX/LiteNetLib/pull/621) (merged): cut strings before a surrogate pair when truncating to maxLength so NetDataWriter no longer throws on emoji at the limit
 - [ncalc/ncalc#645](https://github.com/ncalc/ncalc/pull/645) (merged): keep Guid values in ToExpressionString output instead of dropping them
+- [quartznet/quartznet#4363](https://github.com/quartznet/quartznet/pull/4363) (merged): a calendar with no base calendar no longer equals the same calendar layered over one, making the six calendar Equals symmetric
 
 ### Tech stack
 
@@ -137,6 +138,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [MapsterMapper/Mapster#1036](https://github.com/MapsterMapper/Mapster/pull/1036)（已合併）：.NET 物件對應庫，運算式轉成 C# 程式碼時跳脫字元與字串常數裡的換行等控制字元，產生的程式碼不再無法編譯
 - [RevenantX/LiteNetLib#621](https://github.com/RevenantX/LiteNetLib/pull/621)（已合併）：C# 可靠 UDP 網路庫，字串依 maxLength 截斷時不再切開代理字元對，長度上限處有 emoji 的訊息不再送出失敗
 - [ncalc/ncalc#645](https://github.com/ncalc/ncalc/pull/645)（已合併）：.NET 運算式求值庫，ToExpressionString 輸出時保留 Guid 值，不再被吞掉變成空字串
+- [quartznet/quartznet#4363](https://github.com/quartznet/quartznet/pull/4363)（已合併）：.NET 排程函式庫，沒有基底的行事曆不再等於套了基底的同一份行事曆，六種行事曆的 Equals 改為對稱
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
