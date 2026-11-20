@@ -92,6 +92,9 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [NLog/NLog#6380](https://github.com/NLog/NLog/pull/6380) (merged): parse integer literals outside the Int32 range in conditions instead of throwing OverflowException
 - [mini-software/MiniExcel#1059](https://github.com/mini-software/MiniExcel/pull/1059) (merged): strip enclosing quotes before unescaping CSV fields so fields made only of quotes round-trip
 - [kaplayjs/kaplay#1184](https://github.com/kaplayjs/kaplay/pull/1184) (merged): make AudioPlay.time() follow playback speed, detune and seek instead of reporting a stale position
+- [porsager/postgres#1286](https://github.com/porsager/postgres/pull/1286) (merged): retry a LISTEN reconnect when its first attempt fails
+- [nissl-lab/npoi#1938](https://github.com/nissl-lab/npoi/pull/1938) (merged): XSSFWorkbook.ForceFormulaRecalculation keeps the value that was assigned
+- [WerWolv/ImHex#2936](https://github.com/WerWolv/ImHex/pull/2936) (merged): the pattern language accepts the Instruction type in every syntax, not only default
 
 ### Tech stack
 
@@ -145,6 +148,9 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [NLog/NLog#6380](https://github.com/NLog/NLog/pull/6380)（已合併）：.NET 日誌函式庫，條件式裡超出 Int32 範圍的整數改為正常解析，不再丟出 OverflowException
 - [mini-software/MiniExcel#1059](https://github.com/mini-software/MiniExcel/pull/1059)（已合併）：.NET Excel／CSV 讀寫庫，CSV 欄位先去掉外層引號再還原跳脫，全是引號的欄位不再少一個引號
 - [kaplayjs/kaplay#1184](https://github.com/kaplayjs/kaplay/pull/1184)（已合併）：JavaScript 遊戲框架，AudioPlay.time() 會跟著播放速度、detune 與跳轉位置更新，不再回報過時的播放時間
+- [porsager/postgres#1286](https://github.com/porsager/postgres/pull/1286)（已合併）：Node.js PostgreSQL 驅動，LISTEN 第一次重連失敗時會繼續重試
+- [nissl-lab/npoi#1938](https://github.com/nissl-lab/npoi/pull/1938)（已合併）：.NET 試算表函式庫，XSSFWorkbook.ForceFormulaRecalculation 會保留設定的值
+- [WerWolv/ImHex#2936](https://github.com/WerWolv/ImHex/pull/2936)（已合併）：十六進位編輯器，模式語言的 Instruction 型別在所有語法都能用，不再只有 default 語法
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
