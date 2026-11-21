@@ -95,6 +95,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [porsager/postgres#1286](https://github.com/porsager/postgres/pull/1286) (merged): retry a LISTEN reconnect when its first attempt fails
 - [nissl-lab/npoi#1938](https://github.com/nissl-lab/npoi/pull/1938) (merged): XSSFWorkbook.ForceFormulaRecalculation keeps the value that was assigned
 - [WerWolv/ImHex#2936](https://github.com/WerWolv/ImHex/pull/2936) (merged): the pattern language accepts the Instruction type in every syntax, not only default
+- [quartznet/quartznet#4380](https://github.com/quartznet/quartznet/pull/4380) (merged): port the symmetric calendar Equals fix to the 3.x line, shipping in 3.22.11
 
 ### Tech stack
 
@@ -151,6 +152,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [porsager/postgres#1286](https://github.com/porsager/postgres/pull/1286)（已合併）：Node.js PostgreSQL 驅動，LISTEN 第一次重連失敗時會繼續重試
 - [nissl-lab/npoi#1938](https://github.com/nissl-lab/npoi/pull/1938)（已合併）：.NET 試算表函式庫，XSSFWorkbook.ForceFormulaRecalculation 會保留設定的值
 - [WerWolv/ImHex#2936](https://github.com/WerWolv/ImHex/pull/2936)（已合併）：十六進位編輯器，模式語言的 Instruction 型別在所有語法都能用，不再只有 default 語法
+- [quartznet/quartznet#4380](https://github.com/quartznet/quartznet/pull/4380)（已合併）：.NET 排程函式庫，把行事曆 Equals 對稱的修正移植到 3.x 版，隨 3.22.11 發布
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
