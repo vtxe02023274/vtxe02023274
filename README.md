@@ -101,6 +101,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [quartznet/quartznet#4398](https://github.com/quartznet/quartznet/pull/4398) (merged): calendars in different time zones no longer compare equal, so the five typed calendar Equals check TimeZone like BaseCalendar does
 - [adamhathcock/sharpcompress#1503](https://github.com/adamhathcock/sharpcompress/pull/1503) (merged): write tar mtimes before 1970 or after 2242 in base-256 for GNU format instead of overwriting the size field, and read GNU tar's base-256 times
 - [fallahn/tmxlite#188](https://github.com/fallahn/tmxlite/pull/188) (merged): zstd-compressed tile layers no longer fall through to the zlib path, so maps saved with zstd load their tiles
+- [mini-software/MiniExcel#1066](https://github.com/mini-software/MiniExcel/pull/1066) (merged): column names past IV, such as IW and XFD, now resolve to their real column index instead of failing
 
 ### Tech stack
 
@@ -163,6 +164,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [quartznet/quartznet#4398](https://github.com/quartznet/quartznet/pull/4398)（已合併）：.NET 排程函式庫，不同時區的同一份行事曆不再被判定相等，五種行事曆的 Equals 跟 BaseCalendar 一樣比對時區
 - [adamhathcock/sharpcompress#1503](https://github.com/adamhathcock/sharpcompress/pull/1503)（已合併）：.NET 壓縮函式庫，tar 的修改時間早於 1970 或晚於 2242 年時，GNU 格式改用 base-256 寫入，不再蓋到大小欄位，也能讀回 GNU tar 寫的這類時間
 - [fallahn/tmxlite#188](https://github.com/fallahn/tmxlite/pull/188)（已合併）：C++ Tiled 地圖讀取庫，zstd 壓縮的圖層不再掉進 zlib 分支，用 zstd 存的地圖能正確讀出圖塊
+- [mini-software/MiniExcel#1066](https://github.com/mini-software/MiniExcel/pull/1066)（已合併）：.NET Excel／CSV 讀寫庫，IV 之後的欄名（如 IW、XFD）能正確換算成欄位索引，不再失敗
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
