@@ -105,6 +105,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [xoofx/Tomlyn#143](https://github.com/xoofx/Tomlyn/pull/143) (merged): write the fractional seconds of DateTime and DateTimeOffset values, so sub-second times round-trip instead of being cut to whole seconds
 - [xoofx/SharpYaml#182](https://github.com/xoofx/SharpYaml/pull/182) (merged): decimal members read with UseSchema keep their full precision instead of going through double and stopping at about 15 digits
 - [scriban/scriban#695](https://github.com/scriban/scriban/pull/695) (merged): string.slice1 and the Liquid slice filter return an empty string when a negative start lands before the string, instead of throwing
+- [duckdb/duckdb-node-neo#538](https://github.com/duckdb/duckdb-node-neo/pull/538) (merged): DATE infinity values print as infinity and -infinity, matching DuckDB, instead of as dates one day past the DATE range
 
 ### Tech stack
 
@@ -171,6 +172,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [xoofx/Tomlyn#143](https://github.com/xoofx/Tomlyn/pull/143)（已合併）：.NET TOML 函式庫，DateTime 與 DateTimeOffset 寫出時保留小數秒，不再被截成整秒
 - [xoofx/SharpYaml#182](https://github.com/xoofx/SharpYaml/pull/182)（已合併）：.NET YAML 函式庫，開啟 UseSchema 時 decimal 欄位保留完整精度，不再先轉成 double 只剩約 15 位
 - [scriban/scriban#695](https://github.com/scriban/scriban/pull/695)（已合併）：.NET 樣板引擎，string.slice1 與 Liquid 的 slice 遇到超出字串開頭的負數起點時回傳空字串，不再丟例外
+- [duckdb/duckdb-node-neo#538](https://github.com/duckdb/duckdb-node-neo/pull/538)（已合併）：DuckDB 的 Node.js 用戶端，DATE 的正負無限大印成 infinity 與 -infinity，跟 DuckDB 一致，不再印成超出範圍一天的日期
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
