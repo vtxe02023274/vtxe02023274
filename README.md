@@ -102,6 +102,9 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [adamhathcock/sharpcompress#1503](https://github.com/adamhathcock/sharpcompress/pull/1503) (merged): write tar mtimes before 1970 or after 2242 in base-256 for GNU format instead of overwriting the size field, and read GNU tar's base-256 times
 - [fallahn/tmxlite#188](https://github.com/fallahn/tmxlite/pull/188) (merged): zstd-compressed tile layers no longer fall through to the zlib path, so maps saved with zstd load their tiles
 - [mini-software/MiniExcel#1066](https://github.com/mini-software/MiniExcel/pull/1066) (merged): column names past IV, such as IW and XFD, now resolve to their real column index instead of failing
+- [xoofx/Tomlyn#143](https://github.com/xoofx/Tomlyn/pull/143) (merged): write the fractional seconds of DateTime and DateTimeOffset values, so sub-second times round-trip instead of being cut to whole seconds
+- [xoofx/SharpYaml#182](https://github.com/xoofx/SharpYaml/pull/182) (merged): decimal members read with UseSchema keep their full precision instead of going through double and stopping at about 15 digits
+- [scriban/scriban#695](https://github.com/scriban/scriban/pull/695) (merged): string.slice1 and the Liquid slice filter return an empty string when a negative start lands before the string, instead of throwing
 
 ### Tech stack
 
@@ -165,6 +168,9 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [adamhathcock/sharpcompress#1503](https://github.com/adamhathcock/sharpcompress/pull/1503)（已合併）：.NET 壓縮函式庫，tar 的修改時間早於 1970 或晚於 2242 年時，GNU 格式改用 base-256 寫入，不再蓋到大小欄位，也能讀回 GNU tar 寫的這類時間
 - [fallahn/tmxlite#188](https://github.com/fallahn/tmxlite/pull/188)（已合併）：C++ Tiled 地圖讀取庫，zstd 壓縮的圖層不再掉進 zlib 分支，用 zstd 存的地圖能正確讀出圖塊
 - [mini-software/MiniExcel#1066](https://github.com/mini-software/MiniExcel/pull/1066)（已合併）：.NET Excel／CSV 讀寫庫，IV 之後的欄名（如 IW、XFD）能正確換算成欄位索引，不再失敗
+- [xoofx/Tomlyn#143](https://github.com/xoofx/Tomlyn/pull/143)（已合併）：.NET TOML 函式庫，DateTime 與 DateTimeOffset 寫出時保留小數秒，不再被截成整秒
+- [xoofx/SharpYaml#182](https://github.com/xoofx/SharpYaml/pull/182)（已合併）：.NET YAML 函式庫，開啟 UseSchema 時 decimal 欄位保留完整精度，不再先轉成 double 只剩約 15 位
+- [scriban/scriban#695](https://github.com/scriban/scriban/pull/695)（已合併）：.NET 樣板引擎，string.slice1 與 Liquid 的 slice 遇到超出字串開頭的負數起點時回傳空字串，不再丟例外
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
