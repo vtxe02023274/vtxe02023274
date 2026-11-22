@@ -98,6 +98,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [quartznet/quartznet#4380](https://github.com/quartznet/quartznet/pull/4380) (merged): port the symmetric calendar Equals fix to the 3.x line, shipping in 3.22.11
 - [ncalc/ncalc#646](https://github.com/ncalc/ncalc/pull/646) (merged): escape quotes, backslashes and line breaks when serializing string literals, so ToExpressionString output parses back
 - [RevenantX/LiteNetLib#622](https://github.com/RevenantX/LiteNetLib/pull/622) (merged): throw instead of silently writing a wrapped length when an array has more than 65535 elements for its ushort length header
+- [quartznet/quartznet#4398](https://github.com/quartznet/quartznet/pull/4398) (merged): calendars in different time zones no longer compare equal, so the five typed calendar Equals check TimeZone like BaseCalendar does
 
 ### Tech stack
 
@@ -157,6 +158,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [quartznet/quartznet#4380](https://github.com/quartznet/quartznet/pull/4380)（已合併）：.NET 排程函式庫，把行事曆 Equals 對稱的修正移植到 3.x 版，隨 3.22.11 發布
 - [ncalc/ncalc#646](https://github.com/ncalc/ncalc/pull/646)（已合併）：.NET 運算式求值庫，序列化字串時跳脫引號、反斜線和換行，ToExpressionString 的輸出能再解析回來
 - [RevenantX/LiteNetLib#622](https://github.com/RevenantX/LiteNetLib/pull/622)（已合併）：C# 可靠 UDP 網路庫，陣列超過 65535 個元素、放不進 ushort 長度欄位時直接丟例外，不再默默寫出錯誤的長度
+- [quartznet/quartznet#4398](https://github.com/quartznet/quartznet/pull/4398)（已合併）：.NET 排程函式庫，不同時區的同一份行事曆不再被判定相等，五種行事曆的 Equals 跟 BaseCalendar 一樣比對時區
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
