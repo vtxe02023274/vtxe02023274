@@ -106,6 +106,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [xoofx/SharpYaml#182](https://github.com/xoofx/SharpYaml/pull/182) (merged): decimal members read with UseSchema keep their full precision instead of going through double and stopping at about 15 digits
 - [scriban/scriban#695](https://github.com/scriban/scriban/pull/695) (merged): string.slice1 and the Liquid slice filter return an empty string when a negative start lands before the string, instead of throwing
 - [duckdb/duckdb-node-neo#538](https://github.com/duckdb/duckdb-node-neo/pull/538) (merged): DATE infinity values print as infinity and -infinity, matching DuckDB, instead of as dates one day past the DATE range
+- [fallahn/tmxlite#189](https://github.com/fallahn/tmxlite/pull/189) (merged): stop on truncated zlib data instead of growing the buffer until allocation fails, and stop reading past the end of short base64 layer data
 
 ### Tech stack
 
@@ -173,6 +174,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [xoofx/SharpYaml#182](https://github.com/xoofx/SharpYaml/pull/182)（已合併）：.NET YAML 函式庫，開啟 UseSchema 時 decimal 欄位保留完整精度，不再先轉成 double 只剩約 15 位
 - [scriban/scriban#695](https://github.com/scriban/scriban/pull/695)（已合併）：.NET 樣板引擎，string.slice1 與 Liquid 的 slice 遇到超出字串開頭的負數起點時回傳空字串，不再丟例外
 - [duckdb/duckdb-node-neo#538](https://github.com/duckdb/duckdb-node-neo/pull/538)（已合併）：DuckDB 的 Node.js 用戶端，DATE 的正負無限大印成 infinity 與 -infinity，跟 DuckDB 一致，不再印成超出範圍一天的日期
+- [fallahn/tmxlite#189](https://github.com/fallahn/tmxlite/pull/189)（已合併）：C++ Tiled 地圖讀取庫，截斷的 zlib 資料改為回報錯誤不再無限加大緩衝區，base64 圖層資料不足時不再讀過結尾
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
