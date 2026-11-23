@@ -109,6 +109,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#189](https://github.com/fallahn/tmxlite/pull/189) (merged): stop on truncated zlib data instead of growing the buffer until allocation fails, and stop reading past the end of short base64 layer data
 - [genaray/Arch#324](https://github.com/genaray/Arch/pull/324) (merged): exclusive queries no longer match archetypes that also have a component whose id sits in a higher bitset word, which showed up once a project had more than 32 component types
 - [mini-software/MiniExcel#1067](https://github.com/mini-software/MiniExcel/pull/1067) (merged): the data reader's GetChars returns the field length when called with a null buffer, as IDataRecord documents, instead of always returning 0
+- [duckdb/duckdb-node-neo#547](https://github.com/duckdb/duckdb-node-neo/pull/547) (merged): TIMESTAMP_S and TIMESTAMP_MS infinity values print as infinity and -infinity, matching DuckDB, instead of as out-of-range timestamps
 
 ### Tech stack
 
@@ -179,6 +180,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#189](https://github.com/fallahn/tmxlite/pull/189)（已合併）：C++ Tiled 地圖讀取庫，截斷的 zlib 資料改為回報錯誤不再無限加大緩衝區，base64 圖層資料不足時不再讀過結尾
 - [genaray/Arch#324](https://github.com/genaray/Arch/pull/324)（已合併）：C# ECS 函式庫，排他查詢不再誤配到多帶一個高編號元件的 archetype，元件種類超過 32 個時才會出現
 - [mini-software/MiniExcel#1067](https://github.com/mini-software/MiniExcel/pull/1067)（已合併）：.NET Excel／CSV 讀寫庫，資料讀取器的 GetChars 在緩衝區為 null 時照 IDataRecord 規範回傳欄位長度，不再一律回 0
+- [duckdb/duckdb-node-neo#547](https://github.com/duckdb/duckdb-node-neo/pull/547)（已合併）：DuckDB 的 Node.js 用戶端，TIMESTAMP_S 與 TIMESTAMP_MS 的正負無限大印成 infinity 與 -infinity，跟 DuckDB 一致，不再印成超出範圍的時間
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
