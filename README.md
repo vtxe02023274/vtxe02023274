@@ -111,6 +111,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [mini-software/MiniExcel#1067](https://github.com/mini-software/MiniExcel/pull/1067) (merged): the data reader's GetChars returns the field length when called with a null buffer, as IDataRecord documents, instead of always returning 0
 - [duckdb/duckdb-node-neo#547](https://github.com/duckdb/duckdb-node-neo/pull/547) (merged): TIMESTAMP_S and TIMESTAMP_MS infinity values print as infinity and -infinity, matching DuckDB, instead of as out-of-range timestamps
 - [adamhathcock/sharpcompress#1506](https://github.com/adamhathcock/sharpcompress/pull/1506) (merged): tar entry names, link targets and the ustar prefix keep their leading and trailing spaces instead of being trimmed, so entries such as " notes.txt" and "notes.txt " no longer collapse into one file
+- [perpetualKid/GetText.NET#60](https://github.com/perpetualKid/GetText.NET/pull/60) (merged): fix the built-in plural rules for Arabic, Icelandic and Tachelhit, so counts such as 103, 21 or 0 pick the right translated form
 
 ### Tech stack
 
@@ -183,6 +184,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [mini-software/MiniExcel#1067](https://github.com/mini-software/MiniExcel/pull/1067)（已合併）：.NET Excel／CSV 讀寫庫，資料讀取器的 GetChars 在緩衝區為 null 時照 IDataRecord 規範回傳欄位長度，不再一律回 0
 - [duckdb/duckdb-node-neo#547](https://github.com/duckdb/duckdb-node-neo/pull/547)（已合併）：DuckDB 的 Node.js 用戶端，TIMESTAMP_S 與 TIMESTAMP_MS 的正負無限大印成 infinity 與 -infinity，跟 DuckDB 一致，不再印成超出範圍的時間
 - [adamhathcock/sharpcompress#1506](https://github.com/adamhathcock/sharpcompress/pull/1506)（已合併）：.NET 壓縮函式庫，tar 的檔名、連結目標和 ustar 前綴保留開頭與結尾的空白，" notes.txt" 和 "notes.txt " 不再被讀成同一個檔案
+- [perpetualKid/GetText.NET#60](https://github.com/perpetualKid/GetText.NET/pull/60)（已合併）：.NET gettext 翻譯庫，修正阿拉伯語、冰島語與塔切希特語的內建複數規則，數量 103、21、0 等不再選錯翻譯句
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
