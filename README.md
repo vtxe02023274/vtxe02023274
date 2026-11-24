@@ -112,6 +112,8 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [duckdb/duckdb-node-neo#547](https://github.com/duckdb/duckdb-node-neo/pull/547) (merged): TIMESTAMP_S and TIMESTAMP_MS infinity values print as infinity and -infinity, matching DuckDB, instead of as out-of-range timestamps
 - [adamhathcock/sharpcompress#1506](https://github.com/adamhathcock/sharpcompress/pull/1506) (merged): tar entry names, link targets and the ustar prefix keep their leading and trailing spaces instead of being trimmed, so entries such as " notes.txt" and "notes.txt " no longer collapse into one file
 - [perpetualKid/GetText.NET#60](https://github.com/perpetualKid/GetText.NET/pull/60) (merged): fix the built-in plural rules for Arabic, Icelandic and Tachelhit, so counts such as 103, 21 or 0 pick the right translated form
+- [ncalc/ncalc#648](https://github.com/ncalc/ncalc/pull/648) (merged): ToExpressionString writes DateTime values in a form the #...# date literal parser accepts and keeps milliseconds, so expressions with dates parse back in 12-hour cultures too
+- [colyseus/schema#261](https://github.com/colyseus/schema/pull/261) (merged): encode a lone surrogate (a string cut in the middle of an emoji) as U+FFFD so the length header matches and the values after it decode correctly
 
 ### Tech stack
 
@@ -185,6 +187,8 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [duckdb/duckdb-node-neo#547](https://github.com/duckdb/duckdb-node-neo/pull/547)（已合併）：DuckDB 的 Node.js 用戶端，TIMESTAMP_S 與 TIMESTAMP_MS 的正負無限大印成 infinity 與 -infinity，跟 DuckDB 一致，不再印成超出範圍的時間
 - [adamhathcock/sharpcompress#1506](https://github.com/adamhathcock/sharpcompress/pull/1506)（已合併）：.NET 壓縮函式庫，tar 的檔名、連結目標和 ustar 前綴保留開頭與結尾的空白，" notes.txt" 和 "notes.txt " 不再被讀成同一個檔案
 - [perpetualKid/GetText.NET#60](https://github.com/perpetualKid/GetText.NET/pull/60)（已合併）：.NET gettext 翻譯庫，修正阿拉伯語、冰島語與塔切希特語的內建複數規則，數量 103、21、0 等不再選錯翻譯句
+- [ncalc/ncalc#648](https://github.com/ncalc/ncalc/pull/648)（已合併）：.NET 運算式求值庫，ToExpressionString 把 DateTime 寫成 #...# 日期常值能解析的格式並保留毫秒，12 小時制地區的輸出也能再解析回來
+- [colyseus/schema#261](https://github.com/colyseus/schema/pull/261)（已合併）：多人連線狀態同步庫，從表情符號中間截斷留下的孤立代理字元改編碼成 U+FFFD，長度標頭對得上，後面的欄位不再解錯
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
