@@ -116,6 +116,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [colyseus/schema#261](https://github.com/colyseus/schema/pull/261) (merged): encode a lone surrogate (a string cut in the middle of an emoji) as U+FFFD so the length header matches and the values after it decode correctly
 - [fallahn/tmxlite#190](https://github.com/fallahn/tmxlite/pull/190) (merged): read tile probability as Tiled's relative weight, so fractional weights such as 0.5 no longer become 0 and a weight of 2 no longer ranks below the default
 - [fallahn/tmxlite#191](https://github.com/fallahn/tmxlite/pull/191) (merged): text objects without a color attribute default to black like Tiled, so text drawn with Tiled's default color no longer loads as white
+- [mini-software/MiniExcel#1072](https://github.com/mini-software/MiniExcel/pull/1072) (merged): CSV rows with more fields than the header row, such as a trailing separator, now leave out the extra fields instead of throwing KeyNotFoundException
 
 ### Tech stack
 
@@ -193,6 +194,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [colyseus/schema#261](https://github.com/colyseus/schema/pull/261)（已合併）：多人連線狀態同步庫，從表情符號中間截斷留下的孤立代理字元改編碼成 U+FFFD，長度標頭對得上，後面的欄位不再解錯
 - [fallahn/tmxlite#190](https://github.com/fallahn/tmxlite/pull/190)（已合併）：C++ Tiled 地圖讀取庫，圖塊機率改照 Tiled 的相對權重讀取，0.5 這類小數權重不再變成 0，權重 2 也不再比預設值低
 - [fallahn/tmxlite#191](https://github.com/fallahn/tmxlite/pull/191)（已合併）：C++ Tiled 地圖讀取庫，沒有 color 屬性的文字物件改照 Tiled 預設為黑色，用預設顏色的文字不再讀成白色
+- [mini-software/MiniExcel#1072](https://github.com/mini-software/MiniExcel/pull/1072)（已合併）：.NET Excel／CSV 讀寫庫，有標題列的 CSV 某列欄位比標題多（例如結尾多一個分隔符號）時略過多出的欄位，不再丟 KeyNotFoundException
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
