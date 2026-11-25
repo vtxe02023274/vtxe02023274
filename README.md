@@ -117,6 +117,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#190](https://github.com/fallahn/tmxlite/pull/190) (merged): read tile probability as Tiled's relative weight, so fractional weights such as 0.5 no longer become 0 and a weight of 2 no longer ranks below the default
 - [fallahn/tmxlite#191](https://github.com/fallahn/tmxlite/pull/191) (merged): text objects without a color attribute default to black like Tiled, so text drawn with Tiled's default color no longer loads as white
 - [mini-software/MiniExcel#1072](https://github.com/mini-software/MiniExcel/pull/1072) (merged): CSV rows with more fields than the header row, such as a trailing separator, now leave out the extra fields instead of throwing KeyNotFoundException
+- [philterd/phileas-dotnet#204](https://github.com/philterd/phileas-dotnet/pull/204) (merged): the redaction format replaces `%l` with the label or an empty string and supports `%v` for the original value, instead of leaving both in the output
 
 ### Tech stack
 
@@ -195,6 +196,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#190](https://github.com/fallahn/tmxlite/pull/190)（已合併）：C++ Tiled 地圖讀取庫，圖塊機率改照 Tiled 的相對權重讀取，0.5 這類小數權重不再變成 0，權重 2 也不再比預設值低
 - [fallahn/tmxlite#191](https://github.com/fallahn/tmxlite/pull/191)（已合併）：C++ Tiled 地圖讀取庫，沒有 color 屬性的文字物件改照 Tiled 預設為黑色，用預設顏色的文字不再讀成白色
 - [mini-software/MiniExcel#1072](https://github.com/mini-software/MiniExcel/pull/1072)（已合併）：.NET Excel／CSV 讀寫庫，有標題列的 CSV 某列欄位比標題多（例如結尾多一個分隔符號）時略過多出的欄位，不再丟 KeyNotFoundException
+- [philterd/phileas-dotnet#204](https://github.com/philterd/phileas-dotnet/pull/204)（已合併）：.NET 個資遮蔽函式庫，遮蔽格式的 `%l` 換成分類標籤（沒有就留空），並支援用 `%v` 帶出原始值，不再把兩者原樣留在輸出
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
