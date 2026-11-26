@@ -118,6 +118,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#191](https://github.com/fallahn/tmxlite/pull/191) (merged): text objects without a color attribute default to black like Tiled, so text drawn with Tiled's default color no longer loads as white
 - [mini-software/MiniExcel#1072](https://github.com/mini-software/MiniExcel/pull/1072) (merged): CSV rows with more fields than the header row, such as a trailing separator, now leave out the extra fields instead of throwing KeyNotFoundException
 - [philterd/phileas-dotnet#204](https://github.com/philterd/phileas-dotnet/pull/204) (merged): the redaction format replaces `%l` with the label or an empty string and supports `%v` for the original value, instead of leaving both in the output
+- [perpetualKid/GetText.NET#61](https://github.com/perpetualKid/GetText.NET/pull/61) (merged): GetParticularPluralString fills the count into the translated string like GetPluralString, and GetParticularString uses the catalog's FormatProvider, so context plurals no longer show a raw {0}
 
 ### Tech stack
 
@@ -197,6 +198,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [fallahn/tmxlite#191](https://github.com/fallahn/tmxlite/pull/191)（已合併）：C++ Tiled 地圖讀取庫，沒有 color 屬性的文字物件改照 Tiled 預設為黑色，用預設顏色的文字不再讀成白色
 - [mini-software/MiniExcel#1072](https://github.com/mini-software/MiniExcel/pull/1072)（已合併）：.NET Excel／CSV 讀寫庫，有標題列的 CSV 某列欄位比標題多（例如結尾多一個分隔符號）時略過多出的欄位，不再丟 KeyNotFoundException
 - [philterd/phileas-dotnet#204](https://github.com/philterd/phileas-dotnet/pull/204)（已合併）：.NET 個資遮蔽函式庫，遮蔽格式的 `%l` 換成分類標籤（沒有就留空），並支援用 `%v` 帶出原始值，不再把兩者原樣留在輸出
+- [perpetualKid/GetText.NET#61](https://github.com/perpetualKid/GetText.NET/pull/61)（已合併）：.NET gettext 翻譯庫，帶情境的複數翻譯會像一般複數翻譯一樣代入數量，帶情境的翻譯也改用目錄設定的 FormatProvider，畫面不再出現原樣的 {0}
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
