@@ -120,6 +120,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [philterd/phileas-dotnet#204](https://github.com/philterd/phileas-dotnet/pull/204) (merged): the redaction format replaces `%l` with the label or an empty string and supports `%v` for the original value, instead of leaving both in the output
 - [perpetualKid/GetText.NET#61](https://github.com/perpetualKid/GetText.NET/pull/61) (merged): GetParticularPluralString fills the count into the translated string like GetPluralString, and GetParticularString uses the catalog's FormatProvider, so context plurals no longer show a raw {0}
 - [Hexagon/croner-rust#94](https://github.com/Hexagon/croner-rust/pull/94) (merged): cron descriptions say "every N" only when a stepped field holds the same values as */N, so ranges such as 1-6/2 are no longer described as every 2 months
+- [adhocore/gronx#88](https://github.com/adhocore/gronx/pull/88) (merged): an open-ended weekday step such as 1/2 runs up to 7, so it now also matches Sunday like 1-7/2
 
 ### Tech stack
 
@@ -201,6 +202,7 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [philterd/phileas-dotnet#204](https://github.com/philterd/phileas-dotnet/pull/204)（已合併）：.NET 個資遮蔽函式庫，遮蔽格式的 `%l` 換成分類標籤（沒有就留空），並支援用 `%v` 帶出原始值，不再把兩者原樣留在輸出
 - [perpetualKid/GetText.NET#61](https://github.com/perpetualKid/GetText.NET/pull/61)（已合併）：.NET gettext 翻譯庫，帶情境的複數翻譯會像一般複數翻譯一樣代入數量，帶情境的翻譯也改用目錄設定的 FormatProvider，畫面不再出現原樣的 {0}
 - [Hexagon/croner-rust#94](https://github.com/Hexagon/croner-rust/pull/94)（已合併）：Rust cron 解析庫，帶步長的欄位只有值跟 */N 相同時才描述成「每 N」，1-6/2 這類範圍不再被說成每 2 個月
+- [adhocore/gronx#88](https://github.com/adhocore/gronx/pull/88)（已合併）：Go cron 解析庫，星期欄沒寫終點的步長（例如 1/2）會算到 7，跟 1-7/2 一樣也會排到星期日
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
