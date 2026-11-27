@@ -122,6 +122,8 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [Hexagon/croner-rust#94](https://github.com/Hexagon/croner-rust/pull/94) (merged): cron descriptions say "every N" only when a stepped field holds the same values as */N, so ranges such as 1-6/2 are no longer described as every 2 months
 - [adhocore/gronx#88](https://github.com/adhocore/gronx/pull/88) (merged): an open-ended weekday step such as 1/2 runs up to 7, so it now also matches Sunday like 1-7/2
 - [perpetualKid/GetText.NET#62](https://github.com/perpetualKid/GetText.NET/pull/62) (merged): compiled plural rules evaluate && and || as short-circuiting logical operators like the interpreted rules, so 2 && 4 is true and a guarded division by zero no longer throws
+- [Hexagon/croner-rust#98](https://github.com/Hexagon/croner-rust/pull/98) (merged): cron descriptions no longer call a step wider than its field "every N", so */100 minutes reads as minute 0, and every second or minute of stepped hours reads "Every minute, of every 2 hours"
+- [mini-software/MiniExcel#1076](https://github.com/mini-software/MiniExcel/pull/1076) (merged): the exception for too many empty cells in a range names `OpenXmlConfiguration.MaxSynthesizedCells` and how to turn it off, and the limit is documented in the README and upgrade notes
 
 ### Tech stack
 
@@ -205,6 +207,8 @@ Lint Tiled maps for missing files, out of range tiles, overlapping or unused til
 - [Hexagon/croner-rust#94](https://github.com/Hexagon/croner-rust/pull/94)（已合併）：Rust cron 解析庫，帶步長的欄位只有值跟 */N 相同時才描述成「每 N」，1-6/2 這類範圍不再被說成每 2 個月
 - [adhocore/gronx#88](https://github.com/adhocore/gronx/pull/88)（已合併）：Go cron 解析庫，星期欄沒寫終點的步長（例如 1/2）會算到 7，跟 1-7/2 一樣也會排到星期日
 - [perpetualKid/GetText.NET#62](https://github.com/perpetualKid/GetText.NET/pull/62)（已合併）：.NET gettext 翻譯庫，編譯後的複數規則把 && 和 || 當成會短路的邏輯運算，跟直譯版一致，2 && 4 為真，被條件保護的除以零不再丟例外
+- [Hexagon/croner-rust#98](https://github.com/Hexagon/croner-rust/pull/98)（已合併）：Rust cron 解析庫，步長比欄位範圍還大時不再描述成「每 N」，*/100 分改說成第 0 分；帶步長的小時前面接每秒或每分時，文法改成「Every minute, of every 2 hours」
+- [mini-software/MiniExcel#1076](https://github.com/mini-software/MiniExcel/pull/1076)（已合併）：.NET Excel／CSV 讀寫庫，範圍內空儲存格太多時丟出的例外會寫出控制它的 `OpenXmlConfiguration.MaxSynthesizedCells` 和關閉方法，README 與升級說明也補上這個上限
 
 <div align="center">
 <sub>如果有幫到你，歡迎點個星星 · If something here helps you, a star is always appreciated</sub>
